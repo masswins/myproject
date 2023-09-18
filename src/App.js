@@ -2,14 +2,13 @@ import './App.css';
 import React from 'react';
 import Header from './layout/Header';
 import Footer from './layout/Footer';
-import { useContext } from 'react';
 import { Container } from 'react-bootstrap';
 
 function App() {
     return(
         <>
-        <div className="container-fluid">
-            <div className="row">
+        <div>
+            <div>
                 <Header/>
             </div>
             <main>
@@ -17,7 +16,7 @@ function App() {
                     <h1>Buisness Control App</h1>
                 </Container>
             </main>
-            <div className="row">
+            <div>
                 <Footer/>
             </div>
         </div>
