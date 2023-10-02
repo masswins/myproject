@@ -1,15 +1,16 @@
 import React from "react";
+import { Container, Row } from 'react-bootstrap';
 
 function Footer(){
 
   return(
-      <div className="main-footer text-center text-lg-start" >
+      <div >
           <div className="container">
             <div className="row" >
               {/*Column 1*/}
               <div className="col-md-3 col-sm-6">
                 <h4>info</h4>
-                <ul class="list-unstyled">
+                <ul>
                   <li><a href="#">info</a></li>
                   <li><a href="#">info</a></li>
                   <li><a href="#">info</a></li>
@@ -19,7 +20,7 @@ function Footer(){
               {/*Column 2*/}
               <div className="col-md-3 col-sm-6">
                 <h4>info</h4>
-                <ul class="list-unstyled">
+                <ul>
                   <li><a href="#">info</a></li>
                   <li><a href="#">info</a></li>
                   <li><a href="#">info</a></li>
@@ -29,7 +30,7 @@ function Footer(){
               {/*Column 4 social networks*/}
               <div className="col-md-3 col-sm-6">
                 <h4>we online</h4>
-                <ul class="list-unstyled">
+                <ul>
                   <li><a href="#">info</a></li>
                   <li><a href="#">info</a></li>
                   <li><a href="#">info</a></li>
@@ -40,9 +41,9 @@ function Footer(){
               
               </div>
               {/*Footer Bottom*/}
-              <div className="footer-bottom">
-                <p className="text-xs-center">
-                  &copy;{new Date().getFullYear()} Buisness Control App - All Rigths Reserved
+              <div className="text-center">
+                <p className="d-flex justify-content-center">
+                  &copy;{new Date().getFullYear()} Buisness Control App - All Rigths Reserved by VladiCorp
                 </p>
               </div>
         <div>
@@ -68,14 +69,13 @@ function Footer(){
             <MDBIcon fab icon="github" />
           </a>
   */}
+        <span>
+      Some text for footer; All rights reserved to VladiCorp
+      </span>
         </div>
-      
-          </div>
+      </div>
       </div>
       );
   }
       export default Footer;
 
-      // <span>
-      //Some text for footer; All rights reserved to VladiCorp
-      //</span>

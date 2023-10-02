@@ -2,25 +2,36 @@ import './App.css';
 import React from 'react';
 import Header from './layout/Header';
 import Footer from './layout/Footer';
-import { Container } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
+import { ThemeProvider } from "./contexts/ThemeContext";
+import { ListProvider } from "./contexts/ListContext";
+import CardList from "./components/CardList";
+import MainWrapper from "./components/MainWrapper";
 
 function App() {
     return(
-        <>
-        <div>
-            <div>
-                <Header/>
+        <ThemeProvider>
+            <ListProvider>
+                <MainWrapper>                    
+                <div className="container-fluid">
+            <div className="row">
+                <Header />
             </div>
-            <main>
-                <Container>
-                    <h1>Buisness Control App</h1>
-                </Container>
-            </main>
-            <div>
-                <Footer/>
+            <div className="row">
+                <CardList />
             </div>
-        </div>
-        </>
+                        <main>
+                            <Container>
+                                <h1>Buisness Control App</h1>
+                            </Container>
+                        </main>
+                        <div className="row">
+                            <Footer/>
+                        </div>
+                    </div>                    
+                </MainWrapper>
+            </ListProvider>
+        </ThemeProvider>
     );
 }
 
