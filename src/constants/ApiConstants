@@ -1,0 +1,4 @@
+export const BaseAPI =
+"https://crudconnect.com/admin/projects";
+export const ProjectID = "59992bbf-cde3-4f26-8ab1-8168dec1a7e8";
+export const BusinessCardsCategory = "BusinessCards";
